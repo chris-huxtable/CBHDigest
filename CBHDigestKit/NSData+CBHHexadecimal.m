@@ -1,6 +1,6 @@
 //
-//	NSData+Hexadecimal.h
-//	CBHDigest
+//	NSData+CBHHexadecimal.h
+//	CBHDigestKit
 //
 //	Created by Christian Huxtable, July 2013.
 //	Copyright (c) 2013, Christian Huxtable <chris@huxtable.ca>
@@ -18,20 +18,25 @@
 //	OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Foundation;
+#import "NSData+CBHHexadecimal.h"
 
 
-NS_ASSUME_NONNULL_BEGIN
+@implementation NSData (CBHHexadecimal)
 
-@interface NSData (Hexadecimal)
+- (NSString *)bytesToHex
+{
+	const uint8_t *buffer = (const uint8_t *)[self bytes];
+	if ( buffer == nil ) { return @""; }
 
-/** This method coverts the receivers data into a hexadecimal representation.
- * @return		A String containing the hexadecimal representation.
- * @warning		If the receiver is empty an empty String is returned.
- * @since		Available in version 1.0 and later.
- */
-- (NSString *)bytesToHex;
+	NSUInteger length = [self length];
+	NSMutableString *hexString = [NSMutableString stringWithCapacity:length + length];
+
+	for (NSUInteger i = 0; i < length; ++i)
+	{
+		[hexString appendFormat:@"%02x", (unsigned int)buffer[i]];
+	}
+
+	return [hexString copy];
+}
 
 @end
-
-NS_ASSUME_NONNULL_END

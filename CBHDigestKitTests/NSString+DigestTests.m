@@ -1,6 +1,6 @@
 //
-//	NSData+DigestTests.m
-//	CBHDigest
+//	NSString+DigestTests.m
+//	CBHDigestKit
 //
 //	Created by Christian Huxtable, February 2019.
 //	Copyright (c) 2019, Christian Huxtable <chris@huxtable.ca>
@@ -20,14 +20,15 @@
 
 #import <XCTest/XCTest.h>
 
-#import "NSData+Digest.h"
-#import "NSData+Hexadecimal.h"
+#import "NSString+CBHDigestKit.h"
+#import "NSData+CBHDigestKit.h"
+#import "NSData+CBHHexadecimal.h"
 
 
-@interface NSDataTests : XCTestCase
+@interface NSStringTests : XCTestCase
 @end
 
-@implementation NSDataTests
+@implementation NSStringTests
 
 
 #pragma mark - SHA224
@@ -35,9 +36,8 @@
 - (void)testSHA224_works
 {
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha224];
+	NSData *digest = [message sha224UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -50,9 +50,8 @@
 - (void)testSHA224_empty
 {
 	NSString *message = @"";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha224];
+	NSData *digest = [message sha224UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -68,9 +67,8 @@
 - (void)testSHA256_works
 {
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha256];
+	NSData *digest = [message sha256UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -83,9 +81,8 @@
 - (void)testSHA256_empty
 {
 	NSString *message = @"";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha256];
+	NSData *digest = [message sha256UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -101,9 +98,8 @@
 - (void)testSHA384_works
 {
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha384];
+	NSData *digest = [message sha384UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -116,9 +112,8 @@
 - (void)testSHA384_empty
 {
 	NSString *message = @"";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha384];
+	NSData *digest = [message sha384UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -134,9 +129,8 @@
 - (void)testSHA512_works
 {
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha512];
+	NSData *digest = [message sha512UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -149,9 +143,8 @@
 - (void)testSHA512_empty
 {
 	NSString *message = @"";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha512];
+	NSData *digest = [message sha512UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -167,9 +160,8 @@
 - (void)testSHA1_works
 {
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha1];
+	NSData *digest = [message sha1UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -182,9 +174,8 @@
 - (void)testSHA1_empty
 {
 	NSString *message = @"";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data sha1];
+	NSData *digest = [message sha1UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -200,9 +191,8 @@
 - (void)testMD2_works
 {
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data md2];
+	NSData *digest = [message md2UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -215,9 +205,8 @@
 - (void)testMD2_empty
 {
 	NSString *message = @"";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data md2];
+	NSData *digest = [message md2UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -233,9 +222,8 @@
 - (void)testMD4_works
 {
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data md4];
+	NSData *digest = [message md4UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -248,9 +236,8 @@
 - (void)testMD4_empty
 {
 	NSString *message = @"";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data md4];
+	NSData *digest = [message md4UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -266,9 +253,8 @@
 - (void)testMD5_works
 {
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data md5];
+	NSData *digest = [message md5UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");
@@ -281,9 +267,8 @@
 - (void)testMD5_empty
 {
 	NSString *message = @"";
-	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data md5];
+	NSData *digest = [message md5UsingEncoding:NSUTF8StringEncoding];
 	NSString *digestString = [digest bytesToHex];
 
 	XCTAssertNotNil(digest, @"Digest should not be nil.");

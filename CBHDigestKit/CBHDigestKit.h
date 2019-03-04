@@ -1,6 +1,6 @@
 //
-//	CBHDigest.h
-//	CBHDigest
+//	CBHDigestKit.h
+//	CBHDigestKit
 //
 //	Created by Christian Huxtable, July 2013.
 //	Copyright (c) 2013, Christian Huxtable <chris@huxtable.ca>
@@ -20,10 +20,10 @@
 
 @import Cocoa;
 
-FOUNDATION_EXPORT double CBHDigestVersionNumber;
-FOUNDATION_EXPORT const unsigned char CBHDigestVersionString[];
+FOUNDATION_EXPORT double CBHDigestKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char CBHDigestKitVersionString[];
 
-#import <CBHDigest/NSData+Digest.h>
-#import <CBHDigest/NSString+Digest.h>
+#import <CBHDigestKit/NSData+CBHDigestKit.h>
+#import <CBHDigestKit/NSString+CBHDigestKit.h>
 
-#import <CBHDigest/NSData+Hexadecimal.h>
+#import <CBHDigestKit/NSData+CBHHexadecimal.h>

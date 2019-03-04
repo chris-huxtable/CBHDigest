@@ -1,6 +1,6 @@
 //
-//	NSData+Digest.m
-//	CBHDigest
+//	NSData+CBHDigestKit.m
+//	CBHDigestKit
 //
 //	Created by Christian Huxtable, July 2013.
 //	Copyright (c) 2013, Christian Huxtable <chris@huxtable.ca>
@@ -18,11 +18,12 @@
 //	OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-#import "NSData+Digest.h"
+#import "NSData+CBHDigestKit.h"
+
 #import <CommonCrypto/CommonDigest.h>
 
 
-@implementation NSData (Digest)
+@implementation NSData (CBHDigestKit)
 
 
 #pragma mark - Secure Hash Algorithm 2

@@ -1,6 +1,6 @@
 //
-//	NSString+Digest.m
-//	CBHDigest
+//	NSString+CBHDigestKit.m
+//	CBHDigestKit
 //
 //	Created by Christian Huxtable, February 2019.
 //	Copyright (c) 2019, Christian Huxtable <chris@huxtable.ca>
@@ -18,12 +18,12 @@
 //	OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-#import "NSString+Digest.h"
+#import "NSString+CBHDigestKit.h"
 
-#import "NSData+Digest.h"
+#import "NSData+CBHDigestKit.h"
 
 
-@implementation NSString (Digest)
+@implementation NSString (CBHDigestKit)
 
 
 #pragma mark - Secure Hash Algorithm 2

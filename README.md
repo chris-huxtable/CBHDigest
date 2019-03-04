@@ -1,4 +1,4 @@
-# CBHDigest
+# CBHDigestKit
 
 An easy to use category for `NSData` and `NSString` to calculate digests.
 
@@ -15,7 +15,7 @@ Supports:
 
 ## Use
 
-`CBHDigest` extends `NSData` and `NSString` with a category adding methods for several digests and converting from `bytesToHex`.
+`CBHDigestKit` extends `NSData` and `NSString` with a category adding methods for several digests and converting from `bytesToHex`.
 
 #### Example:
 
@@ -40,4 +40,4 @@ NSLog(@"0x%@", [digest bytesToHex]);
 
 
 ## Licence
-CBHDigest is available under the [ISC license](https://github.com/chris-huxtable/CBHDigest/blob/master/LICENSE).
+CBHDigestKit is available under the [ISC license](https://github.com/chris-huxtable/CBHDigestKit/blob/master/LICENSE).

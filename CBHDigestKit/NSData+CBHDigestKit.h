@@ -1,6 +1,6 @@
 //
-//	NSData+Digest.h
-//	CBHDigest
+//	NSData+CBHDigestKit.h
+//	CBHDigestKit
 //
 //	Created by Christian Huxtable, July 2013.
 //	Copyright (c) 2013, Christian Huxtable <chris@huxtable.ca>
@@ -23,7 +23,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSData (Digest)
+@interface NSData (CBHDigestKit)
 
 
 #pragma mark - Secure Hash Algorithm 2

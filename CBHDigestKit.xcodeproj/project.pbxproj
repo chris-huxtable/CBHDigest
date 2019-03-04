@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8376D11C2216714900C15543 /* CBHDigest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8376D1122216714900C15543 /* CBHDigest.framework */; };
+		8376D11C2216714900C15543 /* CBHDigestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8376D1122216714900C15543 /* CBHDigestKit.framework */; };
 		8376D1212216714900C15543 /* NSData+DigestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D1202216714900C15543 /* NSData+DigestTests.m */; };
-		8376D1232216714900C15543 /* CBHDigest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D1152216714900C15543 /* CBHDigest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8376D12E2216715D00C15543 /* NSData+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D12C2216715D00C15543 /* NSData+Digest.m */; };
-		8376D12F2216715D00C15543 /* NSData+Digest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D12D2216715D00C15543 /* NSData+Digest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8376D13222170C2900C15543 /* NSString+Digest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D13022170C2900C15543 /* NSString+Digest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8376D13322170C2900C15543 /* NSString+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D13122170C2900C15543 /* NSString+Digest.m */; };
+		8376D1232216714900C15543 /* CBHDigestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D1152216714900C15543 /* CBHDigestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8376D12E2216715D00C15543 /* NSData+CBHDigestKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D12C2216715D00C15543 /* NSData+CBHDigestKit.m */; };
+		8376D12F2216715D00C15543 /* NSData+CBHDigestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D12D2216715D00C15543 /* NSData+CBHDigestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8376D13222170C2900C15543 /* NSString+CBHDigestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D13022170C2900C15543 /* NSString+CBHDigestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8376D13322170C2900C15543 /* NSString+CBHDigestKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D13122170C2900C15543 /* NSString+CBHDigestKit.m */; };
 		8376D13522170ECD00C15543 /* NSString+DigestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D13422170ECD00C15543 /* NSString+DigestTests.m */; };
-		8376D13822171C0300C15543 /* NSData+Hexadecimal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D13622171C0300C15543 /* NSData+Hexadecimal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8376D13922171C0300C15543 /* NSData+Hexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D13722171C0300C15543 /* NSData+Hexadecimal.m */; };
+		8376D13822171C0300C15543 /* NSData+CBHHexadecimal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D13622171C0300C15543 /* NSData+CBHHexadecimal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8376D13922171C0300C15543 /* NSData+CBHHexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D13722171C0300C15543 /* NSData+CBHHexadecimal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,24 +25,24 @@
 			containerPortal = 8376D1092216714900C15543 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8376D1112216714900C15543;
-			remoteInfo = CBHDigest;
+			remoteInfo = CBHDigestKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8376D1122216714900C15543 /* CBHDigest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBHDigest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8376D1152216714900C15543 /* CBHDigest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBHDigest.h; sourceTree = "<group>"; };
+		8376D1122216714900C15543 /* CBHDigestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBHDigestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8376D1152216714900C15543 /* CBHDigestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBHDigestKit.h; sourceTree = "<group>"; };
 		8376D1162216714900C15543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8376D11B2216714900C15543 /* CBHDigestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBHDigestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8376D11B2216714900C15543 /* CBHDigestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBHDigestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8376D1202216714900C15543 /* NSData+DigestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+DigestTests.m"; sourceTree = "<group>"; };
 		8376D1222216714900C15543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8376D12C2216715D00C15543 /* NSData+Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Digest.m"; sourceTree = "<group>"; };
-		8376D12D2216715D00C15543 /* NSData+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Digest.h"; sourceTree = "<group>"; };
-		8376D13022170C2900C15543 /* NSString+Digest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Digest.h"; sourceTree = "<group>"; };
-		8376D13122170C2900C15543 /* NSString+Digest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Digest.m"; sourceTree = "<group>"; };
+		8376D12C2216715D00C15543 /* NSData+CBHDigestKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CBHDigestKit.m"; sourceTree = "<group>"; };
+		8376D12D2216715D00C15543 /* NSData+CBHDigestKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CBHDigestKit.h"; sourceTree = "<group>"; };
+		8376D13022170C2900C15543 /* NSString+CBHDigestKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CBHDigestKit.h"; sourceTree = "<group>"; };
+		8376D13122170C2900C15543 /* NSString+CBHDigestKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CBHDigestKit.m"; sourceTree = "<group>"; };
 		8376D13422170ECD00C15543 /* NSString+DigestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DigestTests.m"; sourceTree = "<group>"; };
-		8376D13622171C0300C15543 /* NSData+Hexadecimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Hexadecimal.h"; sourceTree = "<group>"; };
-		8376D13722171C0300C15543 /* NSData+Hexadecimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hexadecimal.m"; sourceTree = "<group>"; };
+		8376D13622171C0300C15543 /* NSData+CBHHexadecimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+CBHHexadecimal.h"; sourceTree = "<group>"; };
+		8376D13722171C0300C15543 /* NSData+CBHHexadecimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+CBHHexadecimal.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8376D11C2216714900C15543 /* CBHDigest.framework in Frameworks */,
+				8376D11C2216714900C15543 /* CBHDigestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +67,8 @@
 		8376D1082216714900C15543 = {
 			isa = PBXGroup;
 			children = (
-				8376D1142216714900C15543 /* CBHDigest */,
-				8376D11F2216714900C15543 /* CBHDigestTests */,
+				8376D1142216714900C15543 /* CBHDigestKit */,
+				8376D11F2216714900C15543 /* CBHDigestKitTests */,
 				8376D1132216714900C15543 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,35 +76,35 @@
 		8376D1132216714900C15543 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8376D1122216714900C15543 /* CBHDigest.framework */,
-				8376D11B2216714900C15543 /* CBHDigestTests.xctest */,
+				8376D1122216714900C15543 /* CBHDigestKit.framework */,
+				8376D11B2216714900C15543 /* CBHDigestKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8376D1142216714900C15543 /* CBHDigest */ = {
+		8376D1142216714900C15543 /* CBHDigestKit */ = {
 			isa = PBXGroup;
 			children = (
-				8376D1152216714900C15543 /* CBHDigest.h */,
-				8376D12D2216715D00C15543 /* NSData+Digest.h */,
-				8376D12C2216715D00C15543 /* NSData+Digest.m */,
-				8376D13022170C2900C15543 /* NSString+Digest.h */,
-				8376D13122170C2900C15543 /* NSString+Digest.m */,
-				8376D13622171C0300C15543 /* NSData+Hexadecimal.h */,
-				8376D13722171C0300C15543 /* NSData+Hexadecimal.m */,
+				8376D1152216714900C15543 /* CBHDigestKit.h */,
+				8376D12D2216715D00C15543 /* NSData+CBHDigestKit.h */,
+				8376D12C2216715D00C15543 /* NSData+CBHDigestKit.m */,
+				8376D13022170C2900C15543 /* NSString+CBHDigestKit.h */,
+				8376D13122170C2900C15543 /* NSString+CBHDigestKit.m */,
+				8376D13622171C0300C15543 /* NSData+CBHHexadecimal.h */,
+				8376D13722171C0300C15543 /* NSData+CBHHexadecimal.m */,
 				8376D1162216714900C15543 /* Info.plist */,
 			);
-			path = CBHDigest;
+			path = CBHDigestKit;
 			sourceTree = "<group>";
 		};
-		8376D11F2216714900C15543 /* CBHDigestTests */ = {
+		8376D11F2216714900C15543 /* CBHDigestKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				8376D1202216714900C15543 /* NSData+DigestTests.m */,
 				8376D13422170ECD00C15543 /* NSString+DigestTests.m */,
 				8376D1222216714900C15543 /* Info.plist */,
 			);
-			path = CBHDigestTests;
+			path = CBHDigestKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,19 +114,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8376D1232216714900C15543 /* CBHDigest.h in Headers */,
-				8376D13822171C0300C15543 /* NSData+Hexadecimal.h in Headers */,
-				8376D12F2216715D00C15543 /* NSData+Digest.h in Headers */,
-				8376D13222170C2900C15543 /* NSString+Digest.h in Headers */,
+				8376D1232216714900C15543 /* CBHDigestKit.h in Headers */,
+				8376D13822171C0300C15543 /* NSData+CBHHexadecimal.h in Headers */,
+				8376D12F2216715D00C15543 /* NSData+CBHDigestKit.h in Headers */,
+				8376D13222170C2900C15543 /* NSString+CBHDigestKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8376D1112216714900C15543 /* CBHDigest */ = {
+		8376D1112216714900C15543 /* CBHDigestKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8376D1262216714900C15543 /* Build configuration list for PBXNativeTarget "CBHDigest" */;
+			buildConfigurationList = 8376D1262216714900C15543 /* Build configuration list for PBXNativeTarget "CBHDigestKit" */;
 			buildPhases = (
 				8376D10D2216714900C15543 /* Headers */,
 				8376D10E2216714900C15543 /* Sources */,
@@ -137,14 +137,14 @@
 			);
 			dependencies = (
 			);
-			name = CBHDigest;
-			productName = CBHDigest;
-			productReference = 8376D1122216714900C15543 /* CBHDigest.framework */;
+			name = CBHDigestKit;
+			productName = CBHDigestKit;
+			productReference = 8376D1122216714900C15543 /* CBHDigestKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8376D11A2216714900C15543 /* CBHDigestTests */ = {
+		8376D11A2216714900C15543 /* CBHDigestKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8376D1292216714900C15543 /* Build configuration list for PBXNativeTarget "CBHDigestTests" */;
+			buildConfigurationList = 8376D1292216714900C15543 /* Build configuration list for PBXNativeTarget "CBHDigestKitTests" */;
 			buildPhases = (
 				8376D1172216714900C15543 /* Sources */,
 				8376D1182216714900C15543 /* Frameworks */,
@@ -155,9 +155,9 @@
 			dependencies = (
 				8376D11E2216714900C15543 /* PBXTargetDependency */,
 			);
-			name = CBHDigestTests;
-			productName = CBHDigestTests;
-			productReference = 8376D11B2216714900C15543 /* CBHDigestTests.xctest */;
+			name = CBHDigestKitTests;
+			productName = CBHDigestKitTests;
+			productReference = 8376D11B2216714900C15543 /* CBHDigestKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8376D10C2216714900C15543 /* Build configuration list for PBXProject "CBHDigest" */;
+			buildConfigurationList = 8376D10C2216714900C15543 /* Build configuration list for PBXProject "CBHDigestKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -189,8 +189,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8376D1112216714900C15543 /* CBHDigest */,
-				8376D11A2216714900C15543 /* CBHDigestTests */,
+				8376D1112216714900C15543 /* CBHDigestKit */,
+				8376D11A2216714900C15543 /* CBHDigestKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,9 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8376D12E2216715D00C15543 /* NSData+Digest.m in Sources */,
-				8376D13322170C2900C15543 /* NSString+Digest.m in Sources */,
-				8376D13922171C0300C15543 /* NSData+Hexadecimal.m in Sources */,
+				8376D12E2216715D00C15543 /* NSData+CBHDigestKit.m in Sources */,
+				8376D13322170C2900C15543 /* NSString+CBHDigestKit.m in Sources */,
+				8376D13922171C0300C15543 /* NSData+CBHHexadecimal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +237,7 @@
 /* Begin PBXTargetDependency section */
 		8376D11E2216714900C15543 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8376D1112216714900C15543 /* CBHDigest */;
+			target = 8376D1112216714900C15543 /* CBHDigestKit */;
 			targetProxy = 8376D11D2216714900C15543 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -447,25 +447,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BACZA3W44R;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CBHDigest/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/CBHDigestKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = ca.huxtable.CBHDigest;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.huxtable.CBHDigestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -473,68 +472,71 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BACZA3W44R;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CBHDigest/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/CBHDigestKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = ca.huxtable.CBHDigest;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.huxtable.CBHDigestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 		8376D12A2216714900C15543 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BACZA3W44R;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				INFOPLIST_FILE = CBHDigestTests/Info.plist;
+				INFOPLIST_FILE = CBHDigestKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ca.huxtable.CBHDigestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.huxtable.CBHDigestKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		8376D12B2216714900C15543 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BACZA3W44R;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				INFOPLIST_FILE = CBHDigestTests/Info.plist;
+				INFOPLIST_FILE = CBHDigestKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ca.huxtable.CBHDigestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.huxtable.CBHDigestKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8376D10C2216714900C15543 /* Build configuration list for PBXProject "CBHDigest" */ = {
+		8376D10C2216714900C15543 /* Build configuration list for PBXProject "CBHDigestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8376D1242216714900C15543 /* Debug */,
@@ -543,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8376D1262216714900C15543 /* Build configuration list for PBXNativeTarget "CBHDigest" */ = {
+		8376D1262216714900C15543 /* Build configuration list for PBXNativeTarget "CBHDigestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8376D1272216714900C15543 /* Debug */,
@@ -552,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8376D1292216714900C15543 /* Build configuration list for PBXNativeTarget "CBHDigestTests" */ = {
+		8376D1292216714900C15543 /* Build configuration list for PBXNativeTarget "CBHDigestKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8376D12A2216714900C15543 /* Debug */,
