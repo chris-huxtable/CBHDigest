@@ -18,7 +18,7 @@
 //	OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Foundation;
+@import Foundation.NSData;
 
 
 NS_ASSUME_NONNULL_BEGIN

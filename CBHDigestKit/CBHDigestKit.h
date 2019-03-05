@@ -18,7 +18,8 @@
 //	OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Cocoa;
+@import Foundation.NSData;
+@import Foundation.NSString;
 
 FOUNDATION_EXPORT double CBHDigestKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char CBHDigestKitVersionString[];
