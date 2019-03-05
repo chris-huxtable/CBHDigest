@@ -20,7 +20,7 @@
 
 #import "NSData+CBHDigestKit.h"
 
-#import <CommonCrypto/CommonDigest.h>
+@import CommonCrypto.CommonDigest;
 
 
 @implementation NSData (CBHDigestKit)
