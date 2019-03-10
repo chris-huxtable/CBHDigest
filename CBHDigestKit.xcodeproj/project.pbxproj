@@ -43,6 +43,8 @@
 		8376D13422170ECD00C15543 /* NSString+DigestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DigestTests.m"; sourceTree = "<group>"; };
 		8376D13622171C0300C15543 /* NSData+CBHHexadecimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+CBHHexadecimal.h"; sourceTree = "<group>"; };
 		8376D13722171C0300C15543 /* NSData+CBHHexadecimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+CBHHexadecimal.m"; sourceTree = "<group>"; };
+		83AB99492235563400F0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		83AB994A2235563A00F0310C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,8 @@
 		8376D1082216714900C15543 = {
 			isa = PBXGroup;
 			children = (
+				83AB99492235563400F0310C /* README.md */,
+				83AB994A2235563A00F0310C /* LICENSE */,
 				8376D1142216714900C15543 /* CBHDigestKit */,
 				8376D11F2216714900C15543 /* CBHDigestKitTests */,
 				8376D1132216714900C15543 /* Products */,
