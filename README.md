@@ -1,5 +1,9 @@
 # CBHDigestKit
 
+![version](https://img.shields.io/badge/version-1.1.1-blue.svg?cacheSeconds=2592000)
+![licence](https://img.shields.io/badge/licence-ISC-lightgrey.svg?cacheSeconds=2592000)
+![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?cacheSeconds=2592000)
+
 An easy to use category for `NSData` and `NSString` to calculate digests.
 
 Supports:
