@@ -24,9 +24,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/** Adds Data to hex conversion to `NSData`
+ *
+ * @author      Chris Huxtable <chris@huxtable.ca>
+ * @version     1.0
+ * @since       2013-07-01
+ */
 @interface NSData (CBHHexadecimal)
 
 /** This method coverts the receivers data into a hexadecimal representation.
+ *
  * @return		A String containing the hexadecimal representation.
  * @warning		If the receiver is empty an empty String is returned.
  * @since		Available in version 1.0 and later.
