@@ -1,8 +1,8 @@
 # CBHDigestKit
 
-![version](https://img.shields.io/badge/version-1.1.1-blue.svg?cacheSeconds=2592000)
-![licence](https://img.shields.io/badge/licence-ISC-lightgrey.svg?cacheSeconds=2592000)
-![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?cacheSeconds=2592000)
+[![release](https://img.shields.io/badge/release-1.1.1-blue.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit/releases)
+[![licence](https://img.shields.io/badge/licence-ISC-lightgrey.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit/blob/master/LICENSE)
+[![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit)
 
 An easy to use category for `NSData` and `NSString` to calculate digests.
 
