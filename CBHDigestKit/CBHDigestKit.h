@@ -18,11 +18,12 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Foundation.NSData;
-@import Foundation.NSString;
+@import Foundation.NSObjCRuntime;
+
 
 FOUNDATION_EXPORT double CBHDigestKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char CBHDigestKitVersionString[];
+
 
 #import <CBHDigestKit/NSData+CBHDigestKit.h>
 #import <CBHDigestKit/NSString+CBHDigestKit.h>
