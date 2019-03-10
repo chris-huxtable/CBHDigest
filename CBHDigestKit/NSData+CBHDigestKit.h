@@ -28,7 +28,6 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @author      Chris Huxtable <chris@huxtable.ca>
  * @version     1.0
- * @since       2013-07-01
  */
 @interface NSData (CBHDigestKit)
 
@@ -42,28 +41,24 @@ NS_ASSUME_NONNULL_BEGIN
 /** This method digests the data of the receiver using SHA224.
  *
  * @return		A NSData object containing the raw digest or nil if the receiver is empty.
- * @since		Available in version 1.0 and later.
  */
 - (nullable NSData *)sha224;
 
 /** This method digests the data of the receiver using SHA256.
  *
  * @return		A NSData object containing the raw digest or nil if the receiver is empty.
- * @since		Available in version 1.0 and later.
  */
 - (nullable NSData *)sha256;
 
 /** This method digests the data of the receiver using SHA384.
  *
  * @return		A NSData object containing the raw digest or nil if the receiver is empty.
- * @since		Available in version 1.0 and later.
  */
 - (nullable NSData *)sha384;
 
 /** This method digests the data of the receiver using SHA512.
  *
  * @return		A NSData object containing the raw digest or nil if the receiver is empty.
- * @since		Available in version 1.0 and later.
  */
 - (nullable NSData *)sha512;
 
@@ -76,9 +71,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** This method digests the data of the receiver using SHA1.
  *
- * @return		A NSData object containing the raw digest or nil if the receiver is empty.
  * @warning		This algorithm is obsolete, is no longer considered secure, and should not be used.
- * @since		Available in version 1.0 and later.
+ *
+ * @return		A NSData object containing the raw digest or nil if the receiver is empty.
  */
 - (nullable NSData *)sha1;
 
@@ -92,24 +87,24 @@ NS_ASSUME_NONNULL_BEGIN
 /** This method digests the data of the receiver using MD2.
  *
  * @return		A NSData object containing the raw digest or nil if the receiver is empty.
+ *
  * @warning		This algorithm is obsolete, is no longer considered secure, and should not be used.
- * @since		Available in version 1.0 and later.
  */
 - (nullable NSData *)md2;
 
 /** This method digests the data of the receiver using MD4.
  *
- * @return		A NSData object containing the raw digest or nil if the receiver is empty.
  * @warning		This algorithm is obsolete, is no longer considered secure, and should not be used.
- * @since		Available in version 1.0 and later.
+ *
+ * @return		A NSData object containing the raw digest or nil if the receiver is empty.
  */
 - (nullable NSData *)md4;
 
 /** This method digests the data of the receiver using MD5.
  *
- * @return		A NSData object containing the raw digest or nil if the receiver is empty.
  * @warning		This algorithm is obsolete, is no longer considered secure, and should not be used.
- * @since		Available in version 1.0 and later.
+ *
+ * @return		A NSData object containing the raw digest or nil if the receiver is empty.
  */
 - (nullable NSData *)md5;
 
