@@ -1,6 +1,7 @@
 # CBHDigestKit
 
 [![release](https://img.shields.io/badge/release-1.1.1-blue.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit/releases)
+[![pod](https://img.shields.io/cocoapods/v/CBHDigestKit.svg)](https://cocoapods.org/pods/CBHDigestKit)
 [![licence](https://img.shields.io/badge/licence-ISC-lightgrey.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit/blob/master/LICENSE)
 [![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit)
 
