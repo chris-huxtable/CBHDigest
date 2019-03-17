@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8312D43E223E806E00941232 /* CBHDigestKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CBHDigestKit.podspec; sourceTree = "<group>"; };
 		8376D1122216714900C15543 /* CBHDigestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBHDigestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8376D1152216714900C15543 /* CBHDigestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBHDigestKit.h; sourceTree = "<group>"; };
 		8376D1162216714900C15543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 			children = (
 				83AB99492235563400F0310C /* README.md */,
 				83AB994A2235563A00F0310C /* LICENSE */,
+				8312D43E223E806E00941232 /* CBHDigestKit.podspec */,
 				8376D1142216714900C15543 /* CBHDigestKit */,
 				8376D11F2216714900C15543 /* CBHDigestKitTests */,
 				8376D1132216714900C15543 /* Products */,
