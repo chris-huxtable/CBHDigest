@@ -20,13 +20,13 @@
 
 #import "CBHDigestTypes.h"
 
-const CBHDigestAlgorithm CBHDigestAlgorithm_SHA224 = @"CBHDigestAlgorithm_SHA224";
-const CBHDigestAlgorithm CBHDigestAlgorithm_SHA256 = @"CBHDigestAlgorithm_SHA256";
-const CBHDigestAlgorithm CBHDigestAlgorithm_SHA384 = @"CBHDigestAlgorithm_SHA384";
-const CBHDigestAlgorithm CBHDigestAlgorithm_SHA512 = @"CBHDigestAlgorithm_SHA512";
+CBHDigestAlgorithm const CBHDigestAlgorithm_SHA224 = @"CBHDigestAlgorithm_SHA224";
+CBHDigestAlgorithm const CBHDigestAlgorithm_SHA256 = @"CBHDigestAlgorithm_SHA256";
+CBHDigestAlgorithm const CBHDigestAlgorithm_SHA384 = @"CBHDigestAlgorithm_SHA384";
+CBHDigestAlgorithm const CBHDigestAlgorithm_SHA512 = @"CBHDigestAlgorithm_SHA512";
 
-const CBHDigestAlgorithm CBHDigestAlgorithm_SHA1 = @"CBHDigestAlgorithm_SHA1";
+CBHDigestAlgorithm const CBHDigestAlgorithm_SHA1 = @"CBHDigestAlgorithm_SHA1";
 
-const CBHDigestAlgorithm CBHDigestAlgorithm_MD2 = @"CBHDigestAlgorithm_MD2";
-const CBHDigestAlgorithm CBHDigestAlgorithm_MD4 = @"CBHDigestAlgorithm_MD4";
-const CBHDigestAlgorithm CBHDigestAlgorithm_MD5 = @"CBHDigestAlgorithm_MD5";
+CBHDigestAlgorithm const CBHDigestAlgorithm_MD2 = @"CBHDigestAlgorithm_MD2";
+CBHDigestAlgorithm const CBHDigestAlgorithm_MD4 = @"CBHDigestAlgorithm_MD4";
+CBHDigestAlgorithm const CBHDigestAlgorithm_MD5 = @"CBHDigestAlgorithm_MD5";
