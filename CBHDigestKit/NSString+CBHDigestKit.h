@@ -20,7 +20,7 @@
 
 @import Foundation.NSString;
 
-#import "CBHDigestTypes.h"
+#import <CBHDigestKit/CBHDigestTypes.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
