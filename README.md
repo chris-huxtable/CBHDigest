@@ -43,6 +43,14 @@ NSData *digest = [data sha256];
 NSLog(@"0x%@", [digest bytesToHex]);
 ```
 
+Compute and print a digest using an arbitrary algorithm:
+```objective-c
+CBHDigestAlgorithm algorithm = ...
+NSData *data = [NSData dataWithContentsOfFile:@"/etc/hosts"];
+NSData *digest = [data digestUsingAlgorithm:algorithm];
+NSLog(@"0x%@", [digest bytesToHex]);
+```
+
 
 ## Licence
 CBHDigestKit is available under the [ISC license](https://github.com/chris-huxtable/CBHDigestKit/blob/master/LICENSE).
