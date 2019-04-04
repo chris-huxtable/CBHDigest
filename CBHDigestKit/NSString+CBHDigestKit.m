@@ -74,4 +74,12 @@
 	return [[self dataUsingEncoding:encoding] md5];
 }
 
+
+#pragma mark - Runtime Selected Algorithm
+
+- (NSData *)digestUsingAlgorithm:(CBHDigestAlgorithm)algorithm andEncoding:(NSStringEncoding)encoding
+{
+	return [[self dataUsingEncoding:encoding] digestUsingAlgorithm:algorithm];
+}
+
 @end

@@ -20,6 +20,8 @@
 
 @import Foundation.NSString;
 
+#import "CBHDigestTypes.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,6 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark - Secure Hash Algorithm 2
+
+/**
+ * @name Secure Hash Algorithm 2
+ */
 
 /** This method digests the receiving string using SHA224.
  *
@@ -69,6 +75,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Secure Hash Algorithm 1
 
+/**
+ * @name Secure Hash Algorithm 1
+ */
+
 /** This method digests the receiving string using SHA1.
  *
  * @param encoding	A string encoding to use in the serialization of the string.
@@ -80,6 +90,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark - Message-Digest Algorithm
+
+/**
+ * @name Message-Digest Algorithm
+ */
 
 /** This method digests the receiving string using MD2.
  *
@@ -104,6 +118,21 @@ NS_ASSUME_NONNULL_BEGIN
  * @return			A NSData object containing the raw digest.
  */
 - (NSData *)md5UsingEncoding:(NSStringEncoding)encoding;
+
+
+#pragma mark - Runtime Selected Algorithm
+
+/**
+ * @name Runtime Selected Algorithm
+ */
+
+/** This method digests the data of the receiver using the provided algorithm.
+ *
+ * @param algorithm		The algorithm to use.
+ *
+ * @return				A NSData object containing the raw digest or nil if the receiver is empty.
+ */
+- (nullable NSData *)digestUsingAlgorithm:(CBHDigestAlgorithm)algorithm andEncoding:(NSStringEncoding)encoding;
 
 @end
 

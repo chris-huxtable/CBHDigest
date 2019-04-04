@@ -122,4 +122,23 @@
 	return [NSData dataWithBytes:digest length:CC_MD5_DIGEST_LENGTH];
 }
 
+
+#pragma mark - Runtime Selected Algorithm
+
+- (NSData *)digestUsingAlgorithm:(CBHDigestAlgorithm)algorithm
+{
+	if ( algorithm == CBHDigestAlgorithm_SHA256 ) { return [self sha256]; }
+	if ( algorithm == CBHDigestAlgorithm_SHA384 ) { return [self sha384]; }
+	if ( algorithm == CBHDigestAlgorithm_SHA512 ) { return [self sha512]; }
+	if ( algorithm == CBHDigestAlgorithm_SHA224 ) { return [self sha224]; }
+
+	if ( algorithm == CBHDigestAlgorithm_SHA1 ) { return [self sha1]; }
+
+	if ( algorithm == CBHDigestAlgorithm_MD5 ) { return [self md5]; }
+	if ( algorithm == CBHDigestAlgorithm_MD4 ) { return [self md4]; }
+	if ( algorithm == CBHDigestAlgorithm_MD2 ) { return [self md2]; }
+
+	return nil;
+}
+
 @end

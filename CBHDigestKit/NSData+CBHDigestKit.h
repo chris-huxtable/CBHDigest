@@ -20,6 +20,8 @@
 
 @import Foundation.NSData;
 
+#include "CBHDigestTypes.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -107,6 +109,22 @@ NS_ASSUME_NONNULL_BEGIN
  * @return		A NSData object containing the raw digest or nil if the receiver is empty.
  */
 - (nullable NSData *)md5;
+
+
+#pragma mark - Runtime Selected Algorithm
+
+/**
+ * @name Runtime Selected Algorithm
+ */
+
+/** This method digests the data of the receiver using the provided algorithm.
+ *
+ * @param algorithm		The algorithm to use.
+ *
+ * @return				A NSData object containing the raw digest or nil if the receiver is empty.
+ */
+- (nullable NSData *)digestUsingAlgorithm:(CBHDigestAlgorithm)algorithm;
+
 
 @end
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833A23152256A418001FA7F5 /* CBHDigestTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A23142256A418001FA7F5 /* CBHDigestTypes.m */; };
+		833A23162256A4E3001FA7F5 /* CBHDigestTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 833A23132256A13C001FA7F5 /* CBHDigestTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8376D11C2216714900C15543 /* CBHDigestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8376D1122216714900C15543 /* CBHDigestKit.framework */; };
 		8376D1212216714900C15543 /* NSData+DigestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D1202216714900C15543 /* NSData+DigestTests.m */; };
 		8376D1232216714900C15543 /* CBHDigestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D1152216714900C15543 /* CBHDigestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		8312D43E223E806E00941232 /* CBHDigestKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CBHDigestKit.podspec; sourceTree = "<group>"; };
+		833A23132256A13C001FA7F5 /* CBHDigestTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBHDigestTypes.h; sourceTree = "<group>"; };
+		833A23142256A418001FA7F5 /* CBHDigestTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBHDigestTypes.m; sourceTree = "<group>"; };
 		8376D1122216714900C15543 /* CBHDigestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBHDigestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8376D1152216714900C15543 /* CBHDigestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBHDigestKit.h; sourceTree = "<group>"; };
 		8376D1162216714900C15543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				8376D1152216714900C15543 /* CBHDigestKit.h */,
+				833A23132256A13C001FA7F5 /* CBHDigestTypes.h */,
+				833A23142256A418001FA7F5 /* CBHDigestTypes.m */,
 				8376D12D2216715D00C15543 /* NSData+CBHDigestKit.h */,
 				8376D12C2216715D00C15543 /* NSData+CBHDigestKit.m */,
 				8376D13022170C2900C15543 /* NSString+CBHDigestKit.h */,
@@ -121,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8376D1232216714900C15543 /* CBHDigestKit.h in Headers */,
+				833A23162256A4E3001FA7F5 /* CBHDigestTypes.h in Headers */,
 				8376D13822171C0300C15543 /* NSData+CBHHexadecimal.h in Headers */,
 				8376D12F2216715D00C15543 /* NSData+CBHDigestKit.h in Headers */,
 				8376D13222170C2900C15543 /* NSString+CBHDigestKit.h in Headers */,
@@ -189,6 +196,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8376D1082216714900C15543;
 			productRefGroup = 8376D1132216714900C15543 /* Products */;
@@ -224,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8376D12E2216715D00C15543 /* NSData+CBHDigestKit.m in Sources */,
+				833A23152256A418001FA7F5 /* CBHDigestTypes.m in Sources */,
 				8376D13322170C2900C15543 /* NSString+CBHDigestKit.m in Sources */,
 				8376D13922171C0300C15543 /* NSData+CBHHexadecimal.m in Sources */,
 			);

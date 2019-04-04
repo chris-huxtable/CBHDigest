@@ -1,9 +1,9 @@
 //
-//  CBHDigestKit.h
+//  CBHDigestTypes.h
 //  CBHDigestKit
 //
-//  Created by Christian Huxtable, July 2013.
-//  Copyright (c) 2013, Christian Huxtable <chris@huxtable.ca>
+//  Created by Christian Huxtable, April 2019.
+//  Copyright (c) 2019, Christian Huxtable <chris@huxtable.ca>
 //
 //  Permission to use, copy, modify, and/or distribute this software for any
 //  purpose with or without fee is hereby granted, provided that the above
@@ -18,16 +18,22 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Foundation.NSObjCRuntime;
+@import Foundation.NSString;
 
 
-FOUNDATION_EXPORT double CBHDigestKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char CBHDigestKitVersionString[];
+NS_ASSUME_NONNULL_BEGIN
 
+typedef NSString * const CBHDigestAlgorithm;
 
-#import <CBHDigestKit/CBHDigestTypes.h>
+extern CBHDigestAlgorithm CBHDigestAlgorithm_SHA224;
+extern CBHDigestAlgorithm CBHDigestAlgorithm_SHA256;
+extern CBHDigestAlgorithm CBHDigestAlgorithm_SHA384;
+extern CBHDigestAlgorithm CBHDigestAlgorithm_SHA512;
 
-#import <CBHDigestKit/NSData+CBHDigestKit.h>
-#import <CBHDigestKit/NSString+CBHDigestKit.h>
+extern CBHDigestAlgorithm CBHDigestAlgorithm_SHA1;
 
-#import <CBHDigestKit/NSData+CBHHexadecimal.h>
+extern CBHDigestAlgorithm CBHDigestAlgorithm_MD2;
+extern CBHDigestAlgorithm CBHDigestAlgorithm_MD4;
+extern CBHDigestAlgorithm CBHDigestAlgorithm_MD5;
+
+NS_ASSUME_NONNULL_END
