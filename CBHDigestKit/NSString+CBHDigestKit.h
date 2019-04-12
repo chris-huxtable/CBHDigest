@@ -1,4 +1,3 @@
-//
 //  NSString+CBHDigestKit.h
 //  CBHDigestKit
 //
@@ -16,7 +15,6 @@
 //  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-//
 
 @import Foundation.NSString;
 
@@ -84,7 +82,6 @@ NS_ASSUME_NONNULL_BEGIN
  * @param encoding	A string encoding to use in the serialization of the string.
  *
  * @return			A NSData object containing the raw digest.
- * @since			Available in version 1.0 and later.
  */
 - (NSData *)sha1UsingEncoding:(NSStringEncoding)encoding;
 
