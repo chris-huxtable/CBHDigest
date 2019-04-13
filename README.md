@@ -5,7 +5,7 @@
 [![licence](https://img.shields.io/badge/licence-ISC-lightgrey.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit/blob/master/LICENSE)
 [![coverage](https://img.shields.io/badge/coverage-99%25-brightgreen.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit)
 
-An easy-to-use category for `NSData` and `NSString` to calculate digests.
+Makes calculating digests easy.
 
 Supports:
 - SHA-224

@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
   spec.version                = "1.3"
   spec.module_name            = "CBHDigestKit"
 
-  spec.summary                = "An easy-to-use category for `NSData` and `NSString` to calculate digests."
+  spec.summary                = "Makes calculating digests easy."
   spec.homepage               = "https://github.com/chris-huxtable/CBHDigestKit"
 
   spec.license                = { :type => "ISC", :file => "LICENSE" }
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc           = true
 
-  spec.public_header_files    = 'CBHDigestKit/*.h'
-  spec.source_files           = "CBHDigestKit/*.{h,m}"
+  spec.public_header_files    = 'CBHDigestKit/**/*.h'
+  spec.source_files           = "CBHDigestKit/**/*.{h,m}"
 
 end
