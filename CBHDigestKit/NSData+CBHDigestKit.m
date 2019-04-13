@@ -20,8 +20,7 @@
 
 #import "NSData+CBHDigestKit.h"
 
-@import CommonCrypto.CommonDigest;
-
+#import "CBHDigester.h"
 
 @implementation NSData (CBHDigestKit)
 
@@ -30,46 +29,30 @@
 
 - (NSData *)sha224
 {
-	const uint8_t *bytes = (const uint8_t *)[self bytes];
-	if ( bytes == nil ) { return nil; }
-
-	uint8_t digest[CC_SHA224_DIGEST_LENGTH];
-	if ( !CC_SHA224(bytes, (CC_LONG)[self length], digest) ) { return nil; }
-
-	return [NSData dataWithBytes:digest length:CC_SHA224_DIGEST_LENGTH];
+	CBHDigester *digester = [CBHDigester sha224];
+	[digester update:self];
+	return [digester finish];
 }
 
 - (NSData *)sha256
 {
-	const uint8_t *bytes = (const uint8_t *)[self bytes];
-	if ( bytes == nil ) { return nil; }
-
-	uint8_t digest[CC_SHA256_DIGEST_LENGTH];
-	if ( !CC_SHA256(bytes, (CC_LONG)[self length], digest) ) { return nil; }
-
-	return [NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
+	CBHDigester *digester = [CBHDigester sha256];
+	[digester update:self];
+	return [digester finish];
 }
 
 - (NSData *)sha384
 {
-	const uint8_t *bytes = (const uint8_t *)[self bytes];
-	if ( bytes == nil ) { return nil; }
-
-	uint8_t digest[CC_SHA384_DIGEST_LENGTH];
-	if ( !CC_SHA384(bytes, (CC_LONG)[self length], digest) ) { return nil; }
-
-	return [NSData dataWithBytes:digest length:CC_SHA384_DIGEST_LENGTH];
+	CBHDigester *digester = [CBHDigester sha384];
+	[digester update:self];
+	return [digester finish];
 }
 
 - (NSData *)sha512
 {
-	const uint8_t *bytes = (const uint8_t *)[self bytes];
-	if ( bytes == nil ) { return nil; }
-
-	uint8_t digest[CC_SHA512_DIGEST_LENGTH];
-	if ( !CC_SHA512(bytes, (CC_LONG)[self length], digest) ) { return nil; }
-
-	return [NSData dataWithBytes:digest length:CC_SHA512_DIGEST_LENGTH];
+	CBHDigester *digester = [CBHDigester sha512];
+	[digester update:self];
+	return [digester finish];
 }
 
 
@@ -77,13 +60,9 @@
 
 - (NSData *)sha1
 {
-	const uint8_t *bytes = (const uint8_t *)[self bytes];
-	if ( bytes == nil ) { return nil; }
-
-	uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-	if ( !CC_SHA1(bytes, (CC_LONG)[self length], digest) ) { return nil; }
-
-	return [NSData dataWithBytes:digest length:CC_SHA1_DIGEST_LENGTH];
+	CBHDigester *digester = [CBHDigester sha1];
+	[digester update:self];
+	return [digester finish];
 }
 
 
@@ -91,35 +70,23 @@
 
 - (NSData *)md2
 {
-	const uint8_t *bytes = (const uint8_t *)[self bytes];
-	if ( bytes == nil ) { return nil; }
-
-	uint8_t digest[CC_MD2_DIGEST_LENGTH];
-	if ( !CC_MD2(bytes, (CC_LONG)[self length], digest) ) { return nil; }
-
-	return [NSData dataWithBytes:digest length:CC_MD2_DIGEST_LENGTH];
+	CBHDigester *digester = [CBHDigester md2];
+	[digester update:self];
+	return [digester finish];
 }
 
 - (NSData *)md4
 {
-	const uint8_t *bytes = (const uint8_t *)[self bytes];
-	if ( bytes == nil ) { return nil; }
-
-	uint8_t digest[CC_MD4_DIGEST_LENGTH];
-	if ( !CC_MD4(bytes, (CC_LONG)[self length], digest) ) { return nil; }
-
-	return [NSData dataWithBytes:digest length:CC_MD4_DIGEST_LENGTH];
+	CBHDigester *digester = [CBHDigester md4];
+	[digester update:self];
+	return [digester finish];
 }
 
 - (NSData *)md5
 {
-	const uint8_t *bytes = (const uint8_t *)[self bytes];
-	if ( bytes == nil ) { return nil; }
-
-	uint8_t digest[CC_MD5_DIGEST_LENGTH];
-	if ( !CC_MD5(bytes, (CC_LONG)[self length], digest) ) { return nil; }
-
-	return [NSData dataWithBytes:digest length:CC_MD5_DIGEST_LENGTH];
+	CBHDigester *digester = [CBHDigester md5];
+	[digester update:self];
+	return [digester finish];
 }
 
 
@@ -127,18 +94,9 @@
 
 - (NSData *)digestUsingAlgorithm:(CBHDigestAlgorithm)algorithm
 {
-	if ( algorithm == CBHDigestAlgorithm_SHA256 ) { return [self sha256]; }
-	if ( algorithm == CBHDigestAlgorithm_SHA384 ) { return [self sha384]; }
-	if ( algorithm == CBHDigestAlgorithm_SHA512 ) { return [self sha512]; }
-	if ( algorithm == CBHDigestAlgorithm_SHA224 ) { return [self sha224]; }
-
-	if ( algorithm == CBHDigestAlgorithm_SHA1 ) { return [self sha1]; }
-
-	if ( algorithm == CBHDigestAlgorithm_MD5 ) { return [self md5]; }
-	if ( algorithm == CBHDigestAlgorithm_MD4 ) { return [self md4]; }
-	if ( algorithm == CBHDigestAlgorithm_MD2 ) { return [self md2]; }
-
-	return nil;
+	CBHDigester *digester = [CBHDigester digesterUsingAlgorithm:algorithm];
+	[digester update:self];
+	return [digester finish];
 }
 
 @end

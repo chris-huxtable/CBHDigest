@@ -419,9 +419,7 @@
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
 	NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
 
-	NSData *digest = [data digestUsingAlgorithm:@"Made up Algorithm."];
-
-	XCTAssertNil(digest, @"Digest should be nil.");
+	XCTAssertThrows([data digestUsingAlgorithm:@"Made up Algorithm."]);
 }
 
 @end
