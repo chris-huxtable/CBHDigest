@@ -3,16 +3,16 @@
 [![release](https://img.shields.io/github/release/chris-huxtable/CBHDigestKit.svg)](https://github.com/chris-huxtable/CBHDigestKit/releases)
 [![pod](https://img.shields.io/cocoapods/v/CBHDigestKit.svg)](https://cocoapods.org/pods/CBHDigestKit)
 [![licence](https://img.shields.io/badge/licence-ISC-lightgrey.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit/blob/master/LICENSE)
-[![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit)
+[![coverage](https://img.shields.io/badge/coverage-99%25-brightgreen.svg?cacheSeconds=2592000)](https://github.com/chris-huxtable/CBHDigestKit)
 
 An easy-to-use category for `NSData` and `NSString` to calculate digests.
 
 Supports:
-- SHA224
-- SHA256
-- SHA386
-- SHA512
-- SHA1
+- SHA-224
+- SHA-256
+- SHA-386
+- SHA-512
+- SHA-1
 - MD2
 - MD4
 - MD5
@@ -24,23 +24,19 @@ Supports:
 
 #### Example:
 
-Compute the SHA256 digest of a `NSString`:
+Compute the SHA-256 digest of a `NSString`:
 ```objective-c
-NSString *string = @"This is a string.";
-NSData *digest = [string sha256UsingEncoding:NSUTF8StringEncoding];
+NSData *digest = [@"This is a string." sha256UsingEncoding:NSUTF8StringEncoding];
 ```
 
-Compute the SHA256 digest of a `NSData`:
+Compute the SHA-256 digest of a `NSData`:
 ```objective-c
-NSData *data = [NSData dataWithContentsOfFile:@"/etc/hosts"];
-NSData *digest = [data sha256];
+NSData *digest = [[NSData dataWithContentsOfFile:@"/etc/hosts"] sha256];
 ```
 
-Compute and print SHA256 digest of a file:
+Efficently compute the  SHA-256 digest of a file:
 ```objective-c
-NSData *data = [NSData dataWithContentsOfFile:@"/etc/hosts"];
-NSData *digest = [data sha256];
-NSLog(@"0x%@", [digest bytesToHex]);
+NSData *digest = [CBHDigester digestStream:[NSInputStream inputStreamWithFileAtPath:@"/etc/hosts"];
 ```
 
 Compute and print a digest using an arbitrary algorithm:

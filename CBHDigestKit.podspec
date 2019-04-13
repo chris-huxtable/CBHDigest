@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name                   = "CBHDigestKit"
-  spec.version                = "1.2"
+  spec.version                = "1.3"
   spec.module_name            = "CBHDigestKit"
 
   spec.summary                = "An easy-to-use category for `NSData` and `NSString` to calculate digests."
