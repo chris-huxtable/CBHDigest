@@ -1,8 +1,8 @@
-//  CBHDigestKit.h
+//  CBHDigesterSHA256.h
 //  CBHDigestKit
 //
-//  Created by Christian Huxtable, July 2013.
-//  Copyright (c) 2013, Christian Huxtable <chris@huxtable.ca>
+//  Created by Christian Huxtable, April 2019.
+//  Copyright (c) 2019, Christian Huxtable <chris@huxtable.ca>
 //
 //  Permission to use, copy, modify, and/or distribute this software for any
 //  purpose with or without fee is hereby granted, provided that the above
@@ -16,17 +16,25 @@
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-@import Foundation.NSObjCRuntime;
-
-
-FOUNDATION_EXPORT double CBHDigestKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char CBHDigestKitVersionString[];
-
-
-#import <CBHDigestKit/CBHDigestTypes.h>
 #import <CBHDigestKit/CBHDigester.h>
 
-#import <CBHDigestKit/NSData+CBHDigestKit.h>
-#import <CBHDigestKit/NSString+CBHDigestKit.h>
 
-#import <CBHDigestKit/NSData+CBHHexadecimal.h>
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CBHDigesterSHA256 : CBHDigester
+
+
+#pragma mark - Initializers
+
+- (instancetype)init NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithAlgorithm:(CBHDigestAlgorithm)algorithm NS_UNAVAILABLE;
+
+
+#pragma mark - Operations
+
+- (void)updateWithBytes:(uint8_t *)bytes ofLength:(NSUInteger)length;
+- (NSData *)finish;
+
+@end
+
+NS_ASSUME_NONNULL_END
