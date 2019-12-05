@@ -1,4 +1,4 @@
-//  CBHDigesterSHA256.m
+//  _CBHDigesterSHA256.m
 //  CBHDigestKit
 //
 //  Created by Christian Huxtable, April 2019.
@@ -16,20 +16,23 @@
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-#import "CBHDigesterSHA256.h"
+#import "_CBHDigesterSHA256.h"
 
 @import CommonCrypto.CommonDigest;
 
 
-@interface CBHDigesterSHA256 ()
+NS_ASSUME_NONNULL_BEGIN
+
+@interface _CBHDigesterSHA256 ()
 {
 	CC_SHA256_CTX _context;
 }
 @end
 
+NS_ASSUME_NONNULL_END
 
-@implementation CBHDigesterSHA256
 
+@implementation _CBHDigesterSHA256
 
 #pragma mark - Initializers
 

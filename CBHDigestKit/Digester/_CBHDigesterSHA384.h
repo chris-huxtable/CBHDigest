@@ -1,4 +1,4 @@
-//  CBHDigesterSHA512.h
+//  _CBHDigesterSHA384.h
 //  CBHDigestKit
 //
 //  Created by Christian Huxtable, April 2019.
@@ -21,8 +21,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CBHDigesterSHA512 : CBHDigester
-
+@interface _CBHDigesterSHA384 : CBHDigester
 
 #pragma mark - Initializers
 

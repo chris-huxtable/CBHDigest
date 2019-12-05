@@ -18,16 +18,16 @@
 
 #import "CBHDigester.h"
 
-#import "CBHDigesterSHA224.h"
-#import "CBHDigesterSHA256.h"
-#import "CBHDigesterSHA384.h"
-#import "CBHDigesterSHA512.h"
+#import "_CBHDigesterSHA224.h"
+#import "_CBHDigesterSHA256.h"
+#import "_CBHDigesterSHA384.h"
+#import "_CBHDigesterSHA512.h"
 
-#import "CBHDigesterSHA1.h"
+#import "_CBHDigesterSHA1.h"
 
-#import "CBHDigesterMD2.h"
-#import "CBHDigesterMD4.h"
-#import "CBHDigesterMD5.h"
+#import "_CBHDigesterMD2.h"
+#import "_CBHDigesterMD4.h"
+#import "_CBHDigesterMD5.h"
 
 #define CBH_MUST_SUBCLASS @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)] userInfo:nil];
 
@@ -88,42 +88,42 @@
 
 + (instancetype)sha224
 {
-	return [[CBHDigesterSHA224 alloc] init];
+	return [[_CBHDigesterSHA224 alloc] init];
 }
 
 + (instancetype)sha256
 {
-	return [[CBHDigesterSHA256 alloc] init];
+	return [[_CBHDigesterSHA256 alloc] init];
 }
 
 + (instancetype)sha384
 {
-	return [[CBHDigesterSHA384 alloc] init];
+	return [[_CBHDigesterSHA384 alloc] init];
 }
 
 + (instancetype)sha512
 {
-	return [[CBHDigesterSHA512 alloc] init];
+	return [[_CBHDigesterSHA512 alloc] init];
 }
 
 + (instancetype)sha1
 {
-	return [[CBHDigesterSHA1 alloc] init];
+	return [[_CBHDigesterSHA1 alloc] init];
 }
 
 + (instancetype)md2
 {
-	return [[CBHDigesterMD2 alloc] init];
+	return [[_CBHDigesterMD2 alloc] init];
 }
 
 + (instancetype)md4
 {
-	return [[CBHDigesterMD4 alloc] init];
+	return [[_CBHDigesterMD4 alloc] init];
 }
 
 + (instancetype)md5
 {
-	return [[CBHDigesterMD5 alloc] init];
+	return [[_CBHDigesterMD5 alloc] init];
 }
 
 

@@ -9,29 +9,29 @@
 /* Begin PBXBuildFile section */
 		833A23152256A418001FA7F5 /* CBHDigestTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A23142256A418001FA7F5 /* CBHDigestTypes.m */; };
 		833A23162256A4E3001FA7F5 /* CBHDigestTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 833A23132256A13C001FA7F5 /* CBHDigestTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83684F2E225F8A0300C6458A /* CBHDigesterSHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F29225F8A0300C6458A /* CBHDigesterSHA256.m */; };
+		83684F2E225F8A0300C6458A /* _CBHDigesterSHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F29225F8A0300C6458A /* _CBHDigesterSHA256.m */; };
 		83684F2F225F8A0300C6458A /* CBHDigester.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F2A225F8A0300C6458A /* CBHDigester.m */; };
 		83684F30225F8A0300C6458A /* CBHDigester.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F2B225F8A0300C6458A /* CBHDigester.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83684F32225F8A0300C6458A /* CBHDigesterSHA256.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F2D225F8A0300C6458A /* CBHDigesterSHA256.h */; };
+		83684F32225F8A0300C6458A /* _CBHDigesterSHA256.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F2D225F8A0300C6458A /* _CBHDigesterSHA256.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		83684F35225F8B5800C6458A /* CBHDigesterSHA256Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F34225F8B5800C6458A /* CBHDigesterSHA256Tests.m */; };
-		83684F38225FA8E500C6458A /* CBHDigesterSHA224.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F36225FA8E500C6458A /* CBHDigesterSHA224.h */; };
-		83684F39225FA8E500C6458A /* CBHDigesterSHA224.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F37225FA8E500C6458A /* CBHDigesterSHA224.m */; };
-		83684F3E225FAA6E00C6458A /* CBHDigesterSHA384.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F3A225FAA6E00C6458A /* CBHDigesterSHA384.m */; };
-		83684F3F225FAA6E00C6458A /* CBHDigesterSHA512.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F3B225FAA6E00C6458A /* CBHDigesterSHA512.h */; };
-		83684F40225FAA6E00C6458A /* CBHDigesterSHA384.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F3C225FAA6E00C6458A /* CBHDigesterSHA384.h */; };
-		83684F41225FAA6E00C6458A /* CBHDigesterSHA512.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F3D225FAA6E00C6458A /* CBHDigesterSHA512.m */; };
+		83684F38225FA8E500C6458A /* _CBHDigesterSHA224.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F36225FA8E500C6458A /* _CBHDigesterSHA224.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83684F39225FA8E500C6458A /* _CBHDigesterSHA224.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F37225FA8E500C6458A /* _CBHDigesterSHA224.m */; };
+		83684F3E225FAA6E00C6458A /* _CBHDigesterSHA384.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F3A225FAA6E00C6458A /* _CBHDigesterSHA384.m */; };
+		83684F3F225FAA6E00C6458A /* _CBHDigesterSHA512.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F3B225FAA6E00C6458A /* _CBHDigesterSHA512.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83684F40225FAA6E00C6458A /* _CBHDigesterSHA384.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F3C225FAA6E00C6458A /* _CBHDigesterSHA384.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83684F41225FAA6E00C6458A /* _CBHDigesterSHA512.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F3D225FAA6E00C6458A /* _CBHDigesterSHA512.m */; };
 		83684F44225FAB8E00C6458A /* CBHDigesterSHA512Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F42225FAB8E00C6458A /* CBHDigesterSHA512Tests.m */; };
 		83684F45225FAB8E00C6458A /* CBHDigesterSHA384Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F43225FAB8E00C6458A /* CBHDigesterSHA384Tests.m */; };
 		83684F47225FAB9400C6458A /* CBHDigesterSHA224Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F46225FAB9400C6458A /* CBHDigesterSHA224Tests.m */; };
-		83684F4A225FB09800C6458A /* CBHDigesterSHA1.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F48225FB09700C6458A /* CBHDigesterSHA1.h */; };
-		83684F4B225FB09800C6458A /* CBHDigesterSHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F49225FB09800C6458A /* CBHDigesterSHA1.m */; };
+		83684F4A225FB09800C6458A /* _CBHDigesterSHA1.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F48225FB09700C6458A /* _CBHDigesterSHA1.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83684F4B225FB09800C6458A /* _CBHDigesterSHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F49225FB09800C6458A /* _CBHDigesterSHA1.m */; };
 		83684F4D225FB11200C6458A /* CBHDigesterSHA1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F4C225FB11200C6458A /* CBHDigesterSHA1Tests.m */; };
-		83684F50225FB36000C6458A /* CBHDigesterMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F4E225FB36000C6458A /* CBHDigesterMD5.h */; };
-		83684F51225FB36000C6458A /* CBHDigesterMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F4F225FB36000C6458A /* CBHDigesterMD5.m */; };
-		83684F56225FB81900C6458A /* CBHDigesterMD4.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F52225FB81800C6458A /* CBHDigesterMD4.h */; };
-		83684F57225FB81900C6458A /* CBHDigesterMD2.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F53225FB81800C6458A /* CBHDigesterMD2.m */; };
-		83684F58225FB81900C6458A /* CBHDigesterMD2.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F54225FB81800C6458A /* CBHDigesterMD2.h */; };
-		83684F59225FB81900C6458A /* CBHDigesterMD4.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F55225FB81900C6458A /* CBHDigesterMD4.m */; };
+		83684F50225FB36000C6458A /* _CBHDigesterMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F4E225FB36000C6458A /* _CBHDigesterMD5.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83684F51225FB36000C6458A /* _CBHDigesterMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F4F225FB36000C6458A /* _CBHDigesterMD5.m */; };
+		83684F56225FB81900C6458A /* _CBHDigesterMD4.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F52225FB81800C6458A /* _CBHDigesterMD4.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83684F57225FB81900C6458A /* _CBHDigesterMD2.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F53225FB81800C6458A /* _CBHDigesterMD2.m */; };
+		83684F58225FB81900C6458A /* _CBHDigesterMD2.h in Headers */ = {isa = PBXBuildFile; fileRef = 83684F54225FB81800C6458A /* _CBHDigesterMD2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83684F59225FB81900C6458A /* _CBHDigesterMD4.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F55225FB81900C6458A /* _CBHDigesterMD4.m */; };
 		83684F5D225FC1BB00C6458A /* CBHDigesterMD4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F5A225FC1BB00C6458A /* CBHDigesterMD4Tests.m */; };
 		83684F5E225FC1BB00C6458A /* CBHDigesterMD2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F5B225FC1BB00C6458A /* CBHDigesterMD2Tests.m */; };
 		83684F5F225FC1BB00C6458A /* CBHDigesterMD5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F5C225FC1BB00C6458A /* CBHDigesterMD5Tests.m */; };
@@ -61,29 +61,29 @@
 		8312D43E223E806E00941232 /* CBHDigestKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CBHDigestKit.podspec; sourceTree = "<group>"; };
 		833A23132256A13C001FA7F5 /* CBHDigestTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBHDigestTypes.h; sourceTree = "<group>"; };
 		833A23142256A418001FA7F5 /* CBHDigestTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBHDigestTypes.m; sourceTree = "<group>"; };
-		83684F29225F8A0300C6458A /* CBHDigesterSHA256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA256.m; sourceTree = "<group>"; };
+		83684F29225F8A0300C6458A /* _CBHDigesterSHA256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CBHDigesterSHA256.m; sourceTree = "<group>"; };
 		83684F2A225F8A0300C6458A /* CBHDigester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigester.m; sourceTree = "<group>"; };
 		83684F2B225F8A0300C6458A /* CBHDigester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigester.h; sourceTree = "<group>"; };
-		83684F2D225F8A0300C6458A /* CBHDigesterSHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigesterSHA256.h; sourceTree = "<group>"; };
+		83684F2D225F8A0300C6458A /* _CBHDigesterSHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CBHDigesterSHA256.h; sourceTree = "<group>"; };
 		83684F34225F8B5800C6458A /* CBHDigesterSHA256Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA256Tests.m; sourceTree = "<group>"; };
-		83684F36225FA8E500C6458A /* CBHDigesterSHA224.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigesterSHA224.h; sourceTree = "<group>"; };
-		83684F37225FA8E500C6458A /* CBHDigesterSHA224.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA224.m; sourceTree = "<group>"; };
-		83684F3A225FAA6E00C6458A /* CBHDigesterSHA384.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA384.m; sourceTree = "<group>"; };
-		83684F3B225FAA6E00C6458A /* CBHDigesterSHA512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigesterSHA512.h; sourceTree = "<group>"; };
-		83684F3C225FAA6E00C6458A /* CBHDigesterSHA384.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigesterSHA384.h; sourceTree = "<group>"; };
-		83684F3D225FAA6E00C6458A /* CBHDigesterSHA512.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA512.m; sourceTree = "<group>"; };
+		83684F36225FA8E500C6458A /* _CBHDigesterSHA224.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CBHDigesterSHA224.h; sourceTree = "<group>"; };
+		83684F37225FA8E500C6458A /* _CBHDigesterSHA224.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CBHDigesterSHA224.m; sourceTree = "<group>"; };
+		83684F3A225FAA6E00C6458A /* _CBHDigesterSHA384.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CBHDigesterSHA384.m; sourceTree = "<group>"; };
+		83684F3B225FAA6E00C6458A /* _CBHDigesterSHA512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CBHDigesterSHA512.h; sourceTree = "<group>"; };
+		83684F3C225FAA6E00C6458A /* _CBHDigesterSHA384.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CBHDigesterSHA384.h; sourceTree = "<group>"; };
+		83684F3D225FAA6E00C6458A /* _CBHDigesterSHA512.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CBHDigesterSHA512.m; sourceTree = "<group>"; };
 		83684F42225FAB8E00C6458A /* CBHDigesterSHA512Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA512Tests.m; sourceTree = "<group>"; };
 		83684F43225FAB8E00C6458A /* CBHDigesterSHA384Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA384Tests.m; sourceTree = "<group>"; };
 		83684F46225FAB9400C6458A /* CBHDigesterSHA224Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA224Tests.m; sourceTree = "<group>"; };
-		83684F48225FB09700C6458A /* CBHDigesterSHA1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigesterSHA1.h; sourceTree = "<group>"; };
-		83684F49225FB09800C6458A /* CBHDigesterSHA1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA1.m; sourceTree = "<group>"; };
+		83684F48225FB09700C6458A /* _CBHDigesterSHA1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CBHDigesterSHA1.h; sourceTree = "<group>"; };
+		83684F49225FB09800C6458A /* _CBHDigesterSHA1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CBHDigesterSHA1.m; sourceTree = "<group>"; };
 		83684F4C225FB11200C6458A /* CBHDigesterSHA1Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterSHA1Tests.m; sourceTree = "<group>"; };
-		83684F4E225FB36000C6458A /* CBHDigesterMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigesterMD5.h; sourceTree = "<group>"; };
-		83684F4F225FB36000C6458A /* CBHDigesterMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterMD5.m; sourceTree = "<group>"; };
-		83684F52225FB81800C6458A /* CBHDigesterMD4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigesterMD4.h; sourceTree = "<group>"; };
-		83684F53225FB81800C6458A /* CBHDigesterMD2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterMD2.m; sourceTree = "<group>"; };
-		83684F54225FB81800C6458A /* CBHDigesterMD2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHDigesterMD2.h; sourceTree = "<group>"; };
-		83684F55225FB81900C6458A /* CBHDigesterMD4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterMD4.m; sourceTree = "<group>"; };
+		83684F4E225FB36000C6458A /* _CBHDigesterMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CBHDigesterMD5.h; sourceTree = "<group>"; };
+		83684F4F225FB36000C6458A /* _CBHDigesterMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CBHDigesterMD5.m; sourceTree = "<group>"; };
+		83684F52225FB81800C6458A /* _CBHDigesterMD4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CBHDigesterMD4.h; sourceTree = "<group>"; };
+		83684F53225FB81800C6458A /* _CBHDigesterMD2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CBHDigesterMD2.m; sourceTree = "<group>"; };
+		83684F54225FB81800C6458A /* _CBHDigesterMD2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CBHDigesterMD2.h; sourceTree = "<group>"; };
+		83684F55225FB81900C6458A /* _CBHDigesterMD4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CBHDigesterMD4.m; sourceTree = "<group>"; };
 		83684F5A225FC1BB00C6458A /* CBHDigesterMD4Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterMD4Tests.m; sourceTree = "<group>"; };
 		83684F5B225FC1BB00C6458A /* CBHDigesterMD2Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterMD2Tests.m; sourceTree = "<group>"; };
 		83684F5C225FC1BB00C6458A /* CBHDigesterMD5Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHDigesterMD5Tests.m; sourceTree = "<group>"; };
@@ -126,22 +126,22 @@
 		83684F33225F8A6500C6458A /* Digester */ = {
 			isa = PBXGroup;
 			children = (
-				83684F48225FB09700C6458A /* CBHDigesterSHA1.h */,
-				83684F49225FB09800C6458A /* CBHDigesterSHA1.m */,
-				83684F36225FA8E500C6458A /* CBHDigesterSHA224.h */,
-				83684F37225FA8E500C6458A /* CBHDigesterSHA224.m */,
-				83684F2D225F8A0300C6458A /* CBHDigesterSHA256.h */,
-				83684F29225F8A0300C6458A /* CBHDigesterSHA256.m */,
-				83684F3C225FAA6E00C6458A /* CBHDigesterSHA384.h */,
-				83684F3A225FAA6E00C6458A /* CBHDigesterSHA384.m */,
-				83684F3B225FAA6E00C6458A /* CBHDigesterSHA512.h */,
-				83684F3D225FAA6E00C6458A /* CBHDigesterSHA512.m */,
-				83684F54225FB81800C6458A /* CBHDigesterMD2.h */,
-				83684F53225FB81800C6458A /* CBHDigesterMD2.m */,
-				83684F52225FB81800C6458A /* CBHDigesterMD4.h */,
-				83684F55225FB81900C6458A /* CBHDigesterMD4.m */,
-				83684F4E225FB36000C6458A /* CBHDigesterMD5.h */,
-				83684F4F225FB36000C6458A /* CBHDigesterMD5.m */,
+				83684F36225FA8E500C6458A /* _CBHDigesterSHA224.h */,
+				83684F37225FA8E500C6458A /* _CBHDigesterSHA224.m */,
+				83684F2D225F8A0300C6458A /* _CBHDigesterSHA256.h */,
+				83684F29225F8A0300C6458A /* _CBHDigesterSHA256.m */,
+				83684F3C225FAA6E00C6458A /* _CBHDigesterSHA384.h */,
+				83684F3A225FAA6E00C6458A /* _CBHDigesterSHA384.m */,
+				83684F3B225FAA6E00C6458A /* _CBHDigesterSHA512.h */,
+				83684F3D225FAA6E00C6458A /* _CBHDigesterSHA512.m */,
+				83684F48225FB09700C6458A /* _CBHDigesterSHA1.h */,
+				83684F49225FB09800C6458A /* _CBHDigesterSHA1.m */,
+				83684F54225FB81800C6458A /* _CBHDigesterMD2.h */,
+				83684F53225FB81800C6458A /* _CBHDigesterMD2.m */,
+				83684F52225FB81800C6458A /* _CBHDigesterMD4.h */,
+				83684F55225FB81900C6458A /* _CBHDigesterMD4.m */,
+				83684F4E225FB36000C6458A /* _CBHDigesterMD5.h */,
+				83684F4F225FB36000C6458A /* _CBHDigesterMD5.m */,
 			);
 			path = Digester;
 			sourceTree = "<group>";
@@ -214,18 +214,18 @@
 			files = (
 				8376D1232216714900C15543 /* CBHDigestKit.h in Headers */,
 				833A23162256A4E3001FA7F5 /* CBHDigestTypes.h in Headers */,
-				83684F50225FB36000C6458A /* CBHDigesterMD5.h in Headers */,
-				83684F56225FB81900C6458A /* CBHDigesterMD4.h in Headers */,
+				83684F50225FB36000C6458A /* _CBHDigesterMD5.h in Headers */,
+				83684F56225FB81900C6458A /* _CBHDigesterMD4.h in Headers */,
 				8376D13822171C0300C15543 /* NSData+CBHHexadecimal.h in Headers */,
-				83684F3F225FAA6E00C6458A /* CBHDigesterSHA512.h in Headers */,
-				83684F38225FA8E500C6458A /* CBHDigesterSHA224.h in Headers */,
+				83684F3F225FAA6E00C6458A /* _CBHDigesterSHA512.h in Headers */,
+				83684F38225FA8E500C6458A /* _CBHDigesterSHA224.h in Headers */,
 				8376D12F2216715D00C15543 /* NSData+CBHDigestKit.h in Headers */,
-				83684F40225FAA6E00C6458A /* CBHDigesterSHA384.h in Headers */,
-				83684F32225F8A0300C6458A /* CBHDigesterSHA256.h in Headers */,
+				83684F40225FAA6E00C6458A /* _CBHDigesterSHA384.h in Headers */,
+				83684F32225F8A0300C6458A /* _CBHDigesterSHA256.h in Headers */,
 				8376D13222170C2900C15543 /* NSString+CBHDigestKit.h in Headers */,
-				83684F58225FB81900C6458A /* CBHDigesterMD2.h in Headers */,
+				83684F58225FB81900C6458A /* _CBHDigesterMD2.h in Headers */,
 				83684F30225F8A0300C6458A /* CBHDigester.h in Headers */,
-				83684F4A225FB09800C6458A /* CBHDigesterSHA1.h in Headers */,
+				83684F4A225FB09800C6458A /* _CBHDigesterSHA1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,19 +326,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83684F57225FB81900C6458A /* CBHDigesterMD2.m in Sources */,
-				83684F41225FAA6E00C6458A /* CBHDigesterSHA512.m in Sources */,
-				83684F4B225FB09800C6458A /* CBHDigesterSHA1.m in Sources */,
+				83684F57225FB81900C6458A /* _CBHDigesterMD2.m in Sources */,
+				83684F41225FAA6E00C6458A /* _CBHDigesterSHA512.m in Sources */,
+				83684F4B225FB09800C6458A /* _CBHDigesterSHA1.m in Sources */,
 				8376D12E2216715D00C15543 /* NSData+CBHDigestKit.m in Sources */,
 				833A23152256A418001FA7F5 /* CBHDigestTypes.m in Sources */,
-				83684F51225FB36000C6458A /* CBHDigesterMD5.m in Sources */,
+				83684F51225FB36000C6458A /* _CBHDigesterMD5.m in Sources */,
 				83684F2F225F8A0300C6458A /* CBHDigester.m in Sources */,
 				8376D13322170C2900C15543 /* NSString+CBHDigestKit.m in Sources */,
-				83684F39225FA8E500C6458A /* CBHDigesterSHA224.m in Sources */,
-				83684F2E225F8A0300C6458A /* CBHDigesterSHA256.m in Sources */,
-				83684F59225FB81900C6458A /* CBHDigesterMD4.m in Sources */,
+				83684F39225FA8E500C6458A /* _CBHDigesterSHA224.m in Sources */,
+				83684F2E225F8A0300C6458A /* _CBHDigesterSHA256.m in Sources */,
+				83684F59225FB81900C6458A /* _CBHDigesterMD4.m in Sources */,
 				8376D13922171C0300C15543 /* NSData+CBHHexadecimal.m in Sources */,
-				83684F3E225FAA6E00C6458A /* CBHDigesterSHA384.m in Sources */,
+				83684F3E225FAA6E00C6458A /* _CBHDigesterSHA384.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

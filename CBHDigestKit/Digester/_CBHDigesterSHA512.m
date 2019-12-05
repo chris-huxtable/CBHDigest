@@ -1,4 +1,4 @@
-//  CBHDigesterMD2.h
+//  _CBHDigesterSHA512.m
 //  CBHDigestKit
 //
 //  Created by Christian Huxtable, April 2019.
@@ -16,25 +16,54 @@
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-#import <CBHDigestKit/CBHDigester.h>
+#import "_CBHDigesterSHA512.h"
+
+@import CommonCrypto.CommonDigest;
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CBHDigesterMD2 : CBHDigester
+@interface _CBHDigesterSHA512 ()
+{
+	CC_SHA512_CTX _context;
+}
+@end
 
+NS_ASSUME_NONNULL_END
+
+
+@implementation _CBHDigesterSHA512
 
 #pragma mark - Initializers
 
-- (instancetype)init NS_DESIGNATED_INITIALIZER;
-- (instancetype)initWithAlgorithm:(CBHDigestAlgorithm)algorithm NS_UNAVAILABLE;
+- (instancetype)init
+{
+	if ( (self = [super initWithAlgorithm:CBHDigestAlgorithm_SHA512]) )
+	{
+		CC_SHA512_Init(&_context);
+	}
+
+	return self;
+}
 
 
 #pragma mark - Operations
 
-- (void)updateWithBytes:(uint8_t *)bytes ofLength:(NSUInteger)length;
-- (NSData *)finish;
+- (void)updateWithBytes:(uint8_t *)bytes ofLength:(NSUInteger)length
+{
+	NSAssert(!_isFinished, @"Digester is already finished!");
+	CC_SHA512_Update(&_context, bytes, (CC_LONG)length);
+}
+
+- (NSData *)finish
+{
+	NSAssert(!_isFinished, @"Digester is already finished!");
+	_isFinished = YES;
+
+	unsigned char hash[CC_SHA512_DIGEST_LENGTH];
+	CC_SHA512_Final(hash, &_context);
+
+	return [NSData dataWithBytes:hash length:CC_SHA512_DIGEST_LENGTH];
+}
 
 @end
-
-NS_ASSUME_NONNULL_END

@@ -1,4 +1,4 @@
-//  CBHDigesterMD5.h
+//  _CBHDigesterSHA256.h
 //  CBHDigestKit
 //
 //  Created by Christian Huxtable, April 2019.
@@ -21,8 +21,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CBHDigesterMD5 : CBHDigester
-
+@interface _CBHDigesterSHA256 : CBHDigester
 
 #pragma mark - Initializers
 

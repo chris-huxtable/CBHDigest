@@ -1,4 +1,4 @@
-//  CBHDigesterMD4.m
+//  _CBHDigesterMD5.h
 //  CBHDigestKit
 //
 //  Created by Christian Huxtable, April 2019.
@@ -16,51 +16,24 @@
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-#import "CBHDigesterMD4.h"
-
-@import CommonCrypto.CommonDigest;
+#import <CBHDigestKit/CBHDigester.h>
 
 
-@interface CBHDigesterMD4 ()
-{
-	CC_MD4_CTX _context;
-}
-@end
+NS_ASSUME_NONNULL_BEGIN
 
-
-@implementation CBHDigesterMD4
-
+@interface _CBHDigesterMD5 : CBHDigester
 
 #pragma mark - Initializers
 
-- (instancetype)init
-{
-	if ( (self = [super initWithAlgorithm:CBHDigestAlgorithm_MD4]) )
-	{
-		CC_MD4_Init(&_context);
-	}
-
-	return self;
-}
+- (instancetype)init NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithAlgorithm:(CBHDigestAlgorithm)algorithm NS_UNAVAILABLE;
 
 
 #pragma mark - Operations
 
-- (void)updateWithBytes:(uint8_t *)bytes ofLength:(NSUInteger)length
-{
-	NSAssert(!_isFinished, @"Digester is already finished!");
-	CC_MD4_Update(&_context, bytes, (CC_LONG)length);
-}
-
-- (NSData *)finish
-{
-	NSAssert(!_isFinished, @"Digester is already finished!");
-	_isFinished = YES;
-
-	unsigned char hash[CC_MD4_DIGEST_LENGTH];
-	CC_MD4_Final(hash, &_context);
-
-	return [NSData dataWithBytes:hash length:CC_MD4_DIGEST_LENGTH];
-}
+- (void)updateWithBytes:(uint8_t *)bytes ofLength:(NSUInteger)length;
+- (NSData *)finish;
 
 @end
+
+NS_ASSUME_NONNULL_END
