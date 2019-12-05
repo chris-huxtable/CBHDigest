@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** This method coverts the receivers data into a hexadecimal representation.
  *
- * @warning		If the receiver is empty an empty sstring is returned.
+ * @warning		If the receiver is empty an empty string is returned.
  *
  * @return		A String containing the hexadecimal representation.
  */

@@ -140,7 +140,7 @@
 	if ( algorithm == CBHDigestAlgorithm_MD4 ) { return [CBHDigester md4]; }
 	if ( algorithm == CBHDigestAlgorithm_MD2 ) { return [CBHDigester md2]; }
 
-	@throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"Unknown algorithm specfied." userInfo:nil];
+	@throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"Unknown algorithm specified." userInfo:nil];
 }
 
 

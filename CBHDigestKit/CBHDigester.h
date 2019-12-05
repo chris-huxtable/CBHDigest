@@ -144,16 +144,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Operations
 
-/** This method addes data to the digest.
+/** This method adds data to the digest.
  *
  * @param data			The data to update the digest with.
  */
 - (void)update:(NSData *)data;
 
-/** This method addes data to the digest.
+/** This method adds data to the digest.
  *
  * @param bytes			The data to update the digest with.
- * @param length		The length of the bytes paramater.
+ * @param length		The length of the bytes parameter.
  */
 - (void)updateWithBytes:(const void *)bytes ofLength:(NSUInteger)length;
 
