@@ -1,5 +1,5 @@
 //  CBHDigesterMD4Tests.m
-//  CBHDigestKit
+//  CBHDigestKitTests
 //
 //  Created by Christian Huxtable, April 2019.
 //  Copyright (c) 2019, Christian Huxtable <chris@huxtable.ca>
