@@ -45,6 +45,7 @@
 		8376D13522170ECD00C15543 /* NSString+DigestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D13422170ECD00C15543 /* NSString+DigestTests.m */; };
 		8376D13822171C0300C15543 /* NSData+CBHHexadecimal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8376D13622171C0300C15543 /* NSData+CBHHexadecimal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8376D13922171C0300C15543 /* NSData+CBHHexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8376D13722171C0300C15543 /* NSData+CBHHexadecimal.m */; };
+		83E09E7F2398DD28003B95B9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 83AB994A2235563A00F0310C /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E09E7F2398DD28003B95B9 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
