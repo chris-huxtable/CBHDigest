@@ -36,7 +36,8 @@ NSData *digest = [[NSData dataWithContentsOfFile:@"/etc/hosts"] sha256];
 
 Efficently compute the  SHA-256 digest of a file:
 ```objective-c
-NSData *digest = [CBHDigester digestStream:[NSInputStream inputStreamWithFileAtPath:@"/etc/hosts"];
+NSInputStream *fileStream = [NSInputStream inputStreamWithFileAtPath:@"/etc/hosts"];
+NSData *digest = [CBHDigester digestStream:fileStream usingAlgorithm:CBHDigestAlgorithm_SHA256];
 ```
 
 Compute and print a digest using an arbitrary algorithm:
