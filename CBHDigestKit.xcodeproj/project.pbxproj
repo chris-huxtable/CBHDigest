@@ -103,6 +103,7 @@
 		8376D13722171C0300C15543 /* NSData+CBHHexadecimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+CBHHexadecimal.m"; sourceTree = "<group>"; };
 		83AB99492235563400F0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83AB994A2235563A00F0310C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		83E09E7E2398D7EE003B95B9 /* Correctness.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Correctness.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +202,7 @@
 				83684F5B225FC1BB00C6458A /* CBHDigesterMD2Tests.m */,
 				83684F5A225FC1BB00C6458A /* CBHDigesterMD4Tests.m */,
 				83684F5C225FC1BB00C6458A /* CBHDigesterMD5Tests.m */,
+				83E09E7E2398D7EE003B95B9 /* Correctness.xctestplan */,
 				8376D1222216714900C15543 /* Info.plist */,
 			);
 			path = CBHDigestKitTests;
