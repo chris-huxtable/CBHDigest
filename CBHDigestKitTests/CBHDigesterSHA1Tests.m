@@ -16,12 +16,8 @@
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-#import <XCTest/XCTest.h>
-
-#import "CBHDigestTypes.h"
-#import "CBHDigester.h"
-
-#import "NSData+CBHHexadecimal.h"
+@import XCTest;
+@import CBHDigestKit;
 
 
 @interface CBHDigesterSHA1Tests : XCTestCase
