@@ -19,6 +19,8 @@
 @import XCTest;
 @import CBHDigestKit;
 
+#import "_DigestTests.h"
+
 
 @interface CBHDigesterSHA384Tests : XCTestCase
 @end
@@ -31,13 +33,9 @@
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
 
 	NSData *digest = [CBHDigester digestString:message usingEncoding:NSUTF8StringEncoding andAlgorithm:CBHDigestAlgorithm_SHA384];
-	NSString *digestString = [digest bytesToHex];
-
-	XCTAssertNotNil(digest, @"Digest should not be nil.");
-	XCTAssertNotNil(digestString, @"Digest string should not be nil.");
-
 	NSString *expected = @"ca737f1014a48f4c0b6dd43cb177b0afd9e5169367544c494011e3317dbf9a509cb1e5dc1e85a941bbee3d7f2afbc9b1";
-	XCTAssertEqualObjects(digestString, expected, @"Digest should match known digest.");
+
+	CBHAssertDigest(digest, expected);
 }
 
 - (void)testData
@@ -45,13 +43,9 @@
 	NSData *message = [@"The quick brown fox jumps over the lazy dog" dataUsingEncoding:NSUTF8StringEncoding];
 
 	NSData *digest = [CBHDigester digestData:message usingAlgorithm:CBHDigestAlgorithm_SHA384];
-	NSString *digestString = [digest bytesToHex];
-
-	XCTAssertNotNil(digest, @"Digest should not be nil.");
-	XCTAssertNotNil(digestString, @"Digest string should not be nil.");
-
 	NSString *expected = @"ca737f1014a48f4c0b6dd43cb177b0afd9e5169367544c494011e3317dbf9a509cb1e5dc1e85a941bbee3d7f2afbc9b1";
-	XCTAssertEqualObjects(digestString, expected, @"Digest should match known digest.");
+
+	CBHAssertDigest(digest, expected);
 }
 
 - (void)testStream
@@ -60,13 +54,9 @@
 	NSInputStream *stream = [NSInputStream inputStreamWithData:message];
 
 	NSData *digest = [CBHDigester digestStream:stream usingAlgorithm:CBHDigestAlgorithm_SHA384];
-	NSString *digestString = [digest bytesToHex];
-
-	XCTAssertNotNil(digest, @"Digest should not be nil.");
-	XCTAssertNotNil(digestString, @"Digest string should not be nil.");
-
 	NSString *expected = @"ca737f1014a48f4c0b6dd43cb177b0afd9e5169367544c494011e3317dbf9a509cb1e5dc1e85a941bbee3d7f2afbc9b1";
-	XCTAssertEqualObjects(digestString, expected, @"Digest should match known digest.");
+
+	CBHAssertDigest(digest, expected);
 }
 
 - (void)testEmpty
@@ -74,13 +64,9 @@
 	NSString *message = @"";
 
 	NSData *digest = [CBHDigester digestString:message usingEncoding:NSUTF8StringEncoding andAlgorithm:CBHDigestAlgorithm_SHA384];
-	NSString *digestString = [digest bytesToHex];
-
-	XCTAssertNotNil(digest, @"Digest should not be nil.");
-	XCTAssertNotNil(digestString, @"Digest string should not be nil.");
-
 	NSString *expected = @"38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b";
-	XCTAssertEqualObjects(digestString, expected, @"Digest should match known digest.");
+
+	CBHAssertDigest(digest, expected);
 }
 
 @end

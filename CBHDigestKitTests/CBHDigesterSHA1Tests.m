@@ -19,6 +19,8 @@
 @import XCTest;
 @import CBHDigestKit;
 
+#import "_DigestTests.h"
+
 
 @interface CBHDigesterSHA1Tests : XCTestCase
 @end
@@ -31,13 +33,9 @@
 	NSString *message = @"The quick brown fox jumps over the lazy dog";
 
 	NSData *digest = [CBHDigester digestString:message usingEncoding:NSUTF8StringEncoding andAlgorithm:CBHDigestAlgorithm_SHA1];
-	NSString *digestString = [digest bytesToHex];
-
-	XCTAssertNotNil(digest, @"Digest should not be nil.");
-	XCTAssertNotNil(digestString, @"Digest string should not be nil.");
-
 	NSString *expected = @"2fd4e1c67a2d28fced849ee1bb76e7391b93eb12";
-	XCTAssertEqualObjects(digestString, expected, @"Digest should match known digest.");
+
+	CBHAssertDigest(digest, expected);
 }
 
 - (void)testData
@@ -45,13 +43,9 @@
 	NSData *message = [@"The quick brown fox jumps over the lazy dog" dataUsingEncoding:NSUTF8StringEncoding];
 
 	NSData *digest = [CBHDigester digestData:message usingAlgorithm:CBHDigestAlgorithm_SHA1];
-	NSString *digestString = [digest bytesToHex];
-
-	XCTAssertNotNil(digest, @"Digest should not be nil.");
-	XCTAssertNotNil(digestString, @"Digest string should not be nil.");
-
 	NSString *expected = @"2fd4e1c67a2d28fced849ee1bb76e7391b93eb12";
-	XCTAssertEqualObjects(digestString, expected, @"Digest should match known digest.");
+
+	CBHAssertDigest(digest, expected);
 }
 
 - (void)testStream
@@ -60,13 +54,9 @@
 	NSInputStream *stream = [NSInputStream inputStreamWithData:message];
 
 	NSData *digest = [CBHDigester digestStream:stream usingAlgorithm:CBHDigestAlgorithm_SHA1];
-	NSString *digestString = [digest bytesToHex];
-
-	XCTAssertNotNil(digest, @"Digest should not be nil.");
-	XCTAssertNotNil(digestString, @"Digest string should not be nil.");
-
 	NSString *expected = @"2fd4e1c67a2d28fced849ee1bb76e7391b93eb12";
-	XCTAssertEqualObjects(digestString, expected, @"Digest should match known digest.");
+
+	CBHAssertDigest(digest, expected);
 }
 
 - (void)testEmpty
@@ -74,13 +64,9 @@
 	NSString *message = @"";
 
 	NSData *digest = [CBHDigester digestString:message usingEncoding:NSUTF8StringEncoding andAlgorithm:CBHDigestAlgorithm_SHA1];
-	NSString *digestString = [digest bytesToHex];
-
-	XCTAssertNotNil(digest, @"Digest should not be nil.");
-	XCTAssertNotNil(digestString, @"Digest string should not be nil.");
-
 	NSString *expected = @"da39a3ee5e6b4b0d3255bfef95601890afd80709";
-	XCTAssertEqualObjects(digestString, expected, @"Digest should match known digest.");
+
+	CBHAssertDigest(digest, expected);
 }
 
 @end
