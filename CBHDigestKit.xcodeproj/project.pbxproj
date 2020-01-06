@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14720AF923C12F4A00270662 /* NSData+HexadecimalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14720AF823C12F4A00270662 /* NSData+HexadecimalTests.m */; };
+		14720AFD23C2500900270662 /* _CBHHexadecimal.h in Headers */ = {isa = PBXBuildFile; fileRef = 14720AFB23C2500900270662 /* _CBHHexadecimal.h */; };
+		14720AFE23C2500900270662 /* _CBHHexadecimal.c in Sources */ = {isa = PBXBuildFile; fileRef = 14720AFC23C2500900270662 /* _CBHHexadecimal.c */; };
 		833A23152256A418001FA7F5 /* CBHDigestTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A23142256A418001FA7F5 /* CBHDigestTypes.m */; };
 		833A23162256A4E3001FA7F5 /* CBHDigestTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 833A23132256A13C001FA7F5 /* CBHDigestTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83684F2E225F8A0300C6458A /* _CBHDigesterSHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 83684F29225F8A0300C6458A /* _CBHDigesterSHA256.m */; };
@@ -59,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14720AF823C12F4A00270662 /* NSData+HexadecimalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+HexadecimalTests.m"; sourceTree = "<group>"; };
+		14720AFA23C1337500270662 /* _DigestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _DigestTests.h; sourceTree = "<group>"; };
+		14720AFB23C2500900270662 /* _CBHHexadecimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _CBHHexadecimal.h; sourceTree = "<group>"; };
+		14720AFC23C2500900270662 /* _CBHHexadecimal.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = _CBHHexadecimal.c; sourceTree = "<group>"; };
 		8312D43E223E806E00941232 /* CBHDigestKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CBHDigestKit.podspec; sourceTree = "<group>"; };
 		833A23132256A13C001FA7F5 /* CBHDigestTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBHDigestTypes.h; sourceTree = "<group>"; };
 		833A23142256A418001FA7F5 /* CBHDigestTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBHDigestTypes.m; sourceTree = "<group>"; };
@@ -125,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14720AFF23C2501700270662 /* Hexadecimal */ = {
+			isa = PBXGroup;
+			children = (
+				14720AFB23C2500900270662 /* _CBHHexadecimal.h */,
+				14720AFC23C2500900270662 /* _CBHHexadecimal.c */,
+			);
+			path = Hexadecimal;
+			sourceTree = "<group>";
+		};
 		83684F33225F8A6500C6458A /* Digester */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +200,7 @@
 				8376D13722171C0300C15543 /* NSData+CBHHexadecimal.m */,
 				83684F2B225F8A0300C6458A /* CBHDigester.h */,
 				83684F2A225F8A0300C6458A /* CBHDigester.m */,
+				14720AFF23C2501700270662 /* Hexadecimal */,
 				83684F33225F8A6500C6458A /* Digester */,
 			);
 			path = CBHDigestKit;
@@ -192,6 +209,7 @@
 		8376D11F2216714900C15543 /* CBHDigestKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				14720AFA23C1337500270662 /* _DigestTests.h */,
 				8376D1202216714900C15543 /* NSData+DigestTests.m */,
 				8376D13422170ECD00C15543 /* NSString+DigestTests.m */,
 				83684F4C225FB11200C6458A /* CBHDigesterSHA1Tests.m */,
@@ -202,6 +220,7 @@
 				83684F5B225FC1BB00C6458A /* CBHDigesterMD2Tests.m */,
 				83684F5A225FC1BB00C6458A /* CBHDigesterMD4Tests.m */,
 				83684F5C225FC1BB00C6458A /* CBHDigesterMD5Tests.m */,
+				14720AF823C12F4A00270662 /* NSData+HexadecimalTests.m */,
 				83E09E7E2398D7EE003B95B9 /* Correctness.xctestplan */,
 				8376D1222216714900C15543 /* Info.plist */,
 			);
@@ -215,6 +234,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14720AFD23C2500900270662 /* _CBHHexadecimal.h in Headers */,
 				8376D1232216714900C15543 /* CBHDigestKit.h in Headers */,
 				833A23162256A4E3001FA7F5 /* CBHDigestTypes.h in Headers */,
 				83684F50225FB36000C6458A /* _CBHDigesterMD5.h in Headers */,
@@ -343,6 +363,7 @@
 				83684F59225FB81900C6458A /* _CBHDigesterMD4.m in Sources */,
 				8376D13922171C0300C15543 /* NSData+CBHHexadecimal.m in Sources */,
 				83684F3E225FAA6E00C6458A /* _CBHDigesterSHA384.m in Sources */,
+				14720AFE23C2500900270662 /* _CBHHexadecimal.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83684F47225FAB9400C6458A /* CBHDigesterSHA224Tests.m in Sources */,
+				14720AF923C12F4A00270662 /* NSData+HexadecimalTests.m in Sources */,
 				83684F44225FAB8E00C6458A /* CBHDigesterSHA512Tests.m in Sources */,
 				83684F35225F8B5800C6458A /* CBHDigesterSHA256Tests.m in Sources */,
 				83684F45225FAB8E00C6458A /* CBHDigesterSHA384Tests.m in Sources */,

@@ -29,13 +29,50 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface NSData (CBHHexadecimal)
 
-/** This method coverts the receivers data into a hexadecimal representation.
+
+#pragma mark - Factories
+
+/** Converts hexadecimal encoded data into an NSData object.
  *
- * @warning		If the receiver is empty an empty string is returned.
+ * This implementation makes every effort to handle bad data by ignoring it.
  *
- * @return		A String containing the hexadecimal representation.
+ * @warning If the string contains a `0x` prefix the resulting data will have an extra `00` prefixed to it as the `0` on `0x` will be considered `00`.
+ *
+ * @return  A `NSData` object representation of the hexadecimal string.
  */
-- (NSString *)bytesToHex;
++ (instancetype)dataWithHexString:(NSString *)string;
+
+
+#pragma mark - Initializers
+
+/** Converts hexadecimal encoded data into an NSData object.
+ *
+ * This implementation makes every effort to handle bad data by ignoring it.
+ *
+ * @warning If the string contains a `0x` prefix the resulting data will have an extra `00` prefixed to it as the `0` on `0x` will be considered `00`.
+ *
+ * @return  A `NSData` object representation of the hexadecimal string.
+ */
+- (instancetype)initWithHexString:(NSString *)string;
+
+
+#pragma mark - Encoding
+
+/** Coverts the receivers data into a hexadecimal representation.
+ *
+ * @warning If the receiver is empty an empty string is returned.
+ *
+ * @return  A String containing the hexadecimal representation.
+ */
+- (NSString *)encodeAsHexadecimal;
+
+/** Coverts the receivers data into a capitalized hexadecimal representation.
+ *
+ * @warning If the receiver is empty an empty string is returned.
+ *
+ * @return  A String containing the hexadecimal representation.
+ */
+- (NSString *)encodeAsCapitalizedHexadecimal;
 
 @end
 
