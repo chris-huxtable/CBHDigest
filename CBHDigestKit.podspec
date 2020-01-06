@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
 
   spec.public_header_files    = 'CBHDigestKit/**/*.h'
   spec.private_header_files   = 'CBHDigestKit/**/_*.h'
-  spec.source_files           = 'CBHDigestKit/**/*.{h,m}'
+  spec.source_files           = 'CBHDigestKit/**/*.{h,m,c}'
 
 end
