@@ -21,7 +21,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NSString * CBHDigestAlgorithm;
+typedef NSString* CBHDigestAlgorithm;
 
 extern CBHDigestAlgorithm const CBHDigestAlgorithm_SHA224;
 extern CBHDigestAlgorithm const CBHDigestAlgorithm_SHA256;
